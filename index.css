@@ -763,6 +763,14 @@ section {
     transform: translateX(3px);
 }
 
+.contact-illustrations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
 .contact-form-wrapper {
     background-color: var(--bg-secondary);
     padding: 2rem;
