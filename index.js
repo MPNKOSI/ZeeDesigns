@@ -834,3 +834,13 @@ if (window.top !== window.self) {
     window.top.location = window.self.location;
 }
 
+document.querySelectorAll('.resize').forEach(image =>{
+    image.onclick = () => {
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup-image span').onclick = () => {
+    document.querySelector('.popup-image').style.display = 'none';
+};

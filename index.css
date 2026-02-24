@@ -1452,6 +1452,39 @@ input, textarea {
     background: transparent;
 }
 
+/* popup-image*/
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    scroll-padding-block-start: none;
+}
+
+.popup-image span {
+    position: relative;
+    top: 5%;
+    left: 97%;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    object-fit: cover;
+}
 
 /* Hide any potential debug elements */
 .debug, .dev-tools, .inspector {
@@ -1467,6 +1500,11 @@ input, textarea {
         height: 100%;
         object-fit: cover;
         object-position: center center;
+    }
+
+    .popup-image span {
+        top: -3%;
+        left: 94%;
     }
 }
 
@@ -1659,6 +1697,11 @@ input, textarea {
     .contact-main-illustration {
         max-width: 250px;
         max-height: 200px;
+    }
+
+    .popup-image span {
+        top: 6%;
+        left: 87%;
     }
 }
 
