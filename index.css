@@ -1654,7 +1654,7 @@ input, textarea {
     }
     
     .portfolio-image {
-        height: 200px;
+        height: fit-content;
     }
     
     .portfolio-image img {
@@ -1670,7 +1670,7 @@ input, textarea {
         text-align: center;
     }
 
-        .chatbot-container {
+    .chatbot-container {
         width: calc(100vw - 40px);
         right: 20px;
         bottom: 130px; 
@@ -1692,7 +1692,7 @@ input, textarea {
         bottom: 90px; 
     }
 
-     .chatbot-input-area {
+    .chatbot-input-area {
         padding: 20px;
     }
     
