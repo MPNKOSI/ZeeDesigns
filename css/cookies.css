@@ -1,0 +1,30 @@
+/*cookies*/
+.cookies {
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color:hsl(350, 100%, 88%);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    padding: 10px;
+    top: 75%;
+    left: -300px;
+    position: fixed;
+}
+
+.cookies.active {
+    right: -300px;
+}
+
+.cookies.show {
+    left: 1%;
+    transform: translate(-50% -50%);
+    transition: 5s;
+}
+
+.cookies i {
+    width: 20px;
+    cursor: pointer;
+}

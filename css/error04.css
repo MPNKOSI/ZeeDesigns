@@ -1,0 +1,38 @@
+/*404 page*/
+#page404 {
+    background: url(../Hero\ IMG\ Folder/Hero.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#page404 h1 {
+    font-size: 80px;
+    padding-bottom: 15px;
+    color: gold;
+}
+
+#page404 h2 {
+    font-size: 40px;
+}
+
+#page404 button {
+    color: #fff;
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 6px;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#page404 button:hover {
+    color: gold;
+}

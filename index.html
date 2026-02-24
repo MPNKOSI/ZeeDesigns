@@ -1,0 +1,374 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeeDesigns</title>
+
+    <!-- Favicon for all browsers -->
+    <link rel="icon" type="icon/" href="#">
+   
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#2d8a5f">
+    <meta name="msapplication-TileColor" content="#2d8a5f">
+
+    <link rel="stylesheet" href="./css/cookies.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("L-VcJGNh4UzINCJjW"); // Your public key
+        })();
+    </script>
+</head>
+
+<body data-theme="light" style="opacity: 1; transition: opacity 0.5s;">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="#home" class="logo-text">
+                            <span class="logo-ZD">ZeeDesigns</span><span class="logo-x">ZD</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="https://wa.me/27631773277" class="nav-link whatsapp-link">ENQUIRE NOW</a></li>
+                    </ul>
+                    <div class="nav-controls">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background image -->
+        <div class="hero-image-background">
+            <!-- Desktop image -->
+             <img src="/assest/3 cups.jpeg" class="hero-bg-image" style="background-size: cover;" alt="">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" style="text-align: center;">Welcome to Zee Designs Studio</h1>
+                    <p class="hero-subtitle">
+                        Your trusted all-in-one branding and printing solutions. Enjoy premium designs, high-quality prints, &amp; 
+                        super-fast turnaround on all graphic design—where creativity meets convenience.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+                        <a href="#services" class="btn btn-secondary">View Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Custom Branding solutions for individual &amp; businesses in Johannesburg, Cape Town, Durban, Pretoria and international clients</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="portfolio-image">
+                        <img src="/assest/Custom-Branded-Merchandise.jpg" alt="">
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Elevate your brand with a custom logo design—crafted to reflect your 
+                        identity, values, and aesthetic. Perfect for businesses seeking a memorable, 
+                        professional visual mark that resonates across platforms.</p>
+                </div>
+                <div class="service-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s 0.1s, transform 0.6s 0.1s;">
+                    <div class="portfolio-image">
+                        <img src="/assest/mag - see ur logo here.png" alt="">
+                    </div>
+                    <h3>CORPORATE GIFTS</h3>
+                    <p>We offer corporate clothing from Tshirts, lounge shirts, golf shirts, caps, overalls, jeans to beanies etc.</p>
+                </div>
+                <div class="service-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s 0.2s, transform 0.6s 0.2s;">
+                    <div class="portfolio-image">
+                        <img src="/assest/black merchandise.jpg" alt="">
+                    </div>
+                    <h3>SIGNAGE</h3>
+                    <p>We offer expert signage solutions; taking time and effort to sit with you to fully understand your needs and requirements.We offer expert signage solutions; taking time and effort to sit with you
+                     to fully understand your needs and requirements.</p>
+                </div>
+                <div class="service-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s 0.3s, transform 0.6s 0.3s;">
+                    <div class="portfolio-image">
+                       <img src="/assest/hood+cup+etc.jpg" alt="">
+                    </div>
+                    <h3>PRINT</h3>
+                    <p>We are a nationwide, full colour printing company with a wide range of customers who regard us as their trusted print service provider.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About ZeeDesigns Your Trusted Custom Branding Company in South Africa</h2>
+                    <p>At ZeeDesigns, we are passionate about delivering Creative services. Based in Daveyton.</p>
+                    <p>ZeeDesigns is made up of a talented team working across a number of skilled disciplines. Our strategic, conceptual 
+                        and integrated approach to the projects we undertake, 
+                        coupled with expert creative delivery, consistently exceeds the expectations of our clients – offering value and results.</p>
+                </div>
+                <div class="about-image">
+                    <div class="img-container">
+                        <img  src="/img/aigen_202602181534065.png" style="size-adjust: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Successful projects delivered for businesses across South Africa</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/1 blue cup.jpg" alt="KDS Appliances E-commerce Website - Web Development Project Johannesburg" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                       
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/2 black cups.jpg" alt="Electrohome International Corporate Website - Web Design Johannesburg" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/3 cups.jpeg" alt="Gradient Fashion E-commerce Platform - Mobile App Development South Africa" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/cup+bottle blue.jpeg" alt="Galactic Tech Startup Platform - Custom Software Development Johannesburg" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/decor & GW bottles.jpg" alt="Cosmos Solutions Business Management System - Enterprise Software South Africa" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assest/hood+cup+etc.jpg" alt="Cosmos Solutions Business Management System - Enterprise Software South Africa" loading="lazy" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;" class="loaded">
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's discuss how we can help transform your business with Designs</p>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Start Your Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Talk</h2>
+                <p class="section-subtitle">Ready to transform your Ideas to Reality? Get in touch for a free
+                    consultation.</p>
+                <div class="contact-illustrations">
+                    <img src="/assest/Lets discuss your project.jpeg" alt="Contact Us Main" class="hero-illustrationloaded" width="300" height="240" loading="lazy" decoding="async" draggable="false" style="opacity: 1; background: transparent; transition: opacity 0.3s;">
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item" style="opacity: 0; transform: translateX(-30px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+27631773277" class="btn-call">+27 63 177 3277</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="opacity: 0; transform: translateX(-30px); transition: opacity 0.6s 0.15s, transform 0.6s 0.15s;">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/27631773277" target="_blank" class="btn-whatsapp">
+                                Chat with us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="opacity: 0; transform: translateX(-30px); transition: opacity 0.6s 0.3s, transform 0.6s 0.3s;">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mamaneng St<br>Daveyton, GP 1519<br>South Africa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        <div class="form-status" id="formStatus" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.59479808558!2d28.455221274651272!3d-26.112142677133427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953a20b8b80cbf%3A0x82b7ac3289d6fd3d!2sMamaneng%20St%2C%20Winnie%20Mandela%2C%20Benoni%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1771508615221!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade 
+                 &amp;q=mamaneng+street,+Daveyton,+GP+1519,+South+Africa" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="#home" class="logo-text">
+                            <span class="logo-ZD">ZeeDesigns</span><span class="logo-x">ZD</span>
+                        </a>
+                    </div>
+                    <p>Innovative Creative Branding Solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +27 63 177 3277</li>
+                        <li><i class="fab fa-whatsapp"></i> +27 63 177 3277</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mamaneng Street, Daveyton, 1519</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear">2026</span><a href="https://upgroup.netlify.app/"> UPG</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/27631773277" class="whatsapp-float" id="whatsappFloat"target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot -->
+    <button class="chatbot-button" id="chatbotButton" aria-label="Open chatbot">
+        <i class="fas fa-comments chat-icon"></i>
+        <i class="fas fa-times close-icon"></i>
+    </button>
+
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-info">
+                <h3>Zee Assistant</h3>
+                <p>Online • Ready to help!</p>
+            </div>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div>
+                    <div class="message-content">
+                        Hi! 👋 I'm the ZeeDesigns Assistant. How can I help you today?
+                    </div>
+                    <div class="quick-replies">
+                        <button class="quick-reply-btn" data-message="What services do you offer?">Our Services</button>
+                        <button class="quick-reply-btn" data-message="Tell me about ZeeDesigns">Enquiring</button>
+                        <button class="quick-reply-btn" data-message="How can I contact you?">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message...">
+            <button class="chatbot-send-btn" id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="cookies">
+    <div class="terms">
+      <div class="cancel">
+        <i class="	fas fa-arrow-left" title="Cancel" ></i>
+      </div>
+      We use cookies to enhance your experience and assist with advertising.
+      view <a href="#">privacy policy</a>
+      <p id="accept" class="btn ">Accept</p>
+    </div>
+  </div>
+
+    <script src="/index.js"></script>
+    <script src="./js/cookies.js"></script>
+    <script src="./emailjs.js"></script>
+
+
+</body></html>

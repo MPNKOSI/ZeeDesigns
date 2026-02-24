@@ -1,0 +1,19 @@
+{
+  "name": "zeedesigns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "emailjs": "^5.0.0",
+    "express.js": "^1.0.0",
+    "nodemon": "^3.1.14",
+    "pg": "^8.18.0"
+  }
+}
