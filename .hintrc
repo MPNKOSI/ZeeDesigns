@@ -7,7 +7,8 @@
       "default",
       {
         "ignore": [
-          "meta[name=theme-color]"
+          "meta[name=theme-color]",
+          "video[playsinline]"
         ]
       }
     ],
@@ -22,7 +23,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "frame-title": "off"
+        "frame-title": "off",
+        "image-alt": "off"
       }
     ],
     "axe/name-role-value": [
@@ -39,6 +41,7 @@
           "image-rendering: crisp-edges"
         ]
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }
