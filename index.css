@@ -1761,7 +1761,12 @@ input, textarea {
     .tiktok-float img {
         width: 30px;
     }
-
+    .access {
+        bottom: 30px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+    }
     .access img {
         width: 30px;
         color: #fff;
@@ -1826,7 +1831,7 @@ input, textarea {
     .chatbot-container {
         width: calc(100vw - 40px);
         right: 20px;
-        bottom: 130px; 
+        bottom: 165px; 
         max-height: 500px;
     }
 
