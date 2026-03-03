@@ -1002,7 +1002,6 @@ section {
 .access:hover {
     transform: scale(1.1);
     background-color: #daaeda;
-    border: 1px solid rgb(236, 43, 43);
 }
 
 /* ========================================
@@ -1751,6 +1750,7 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 
+    .access,
     .tiktok-float,
     .whatsapp-float {
         bottom: 20px;
@@ -1761,6 +1761,11 @@ input, textarea {
 
     .tiktok-float img {
         width: 30px;
+    }
+
+    .access img {
+        width: 30px;
+        color: #fff;
     }
 
     .whatsapp-float i {
