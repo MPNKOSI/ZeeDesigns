@@ -1750,7 +1750,6 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 
-    .access,
     .tiktok-float,
     .whatsapp-float {
         bottom: 20px;
