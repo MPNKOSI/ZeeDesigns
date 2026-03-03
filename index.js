@@ -348,51 +348,6 @@ activeStyle.textContent = `
 document.head.appendChild(activeStyle);
 
 // ========================================
-// Stats Counter Animation
-// ========================================
-
-const stats = document.querySelectorAll('.stat-item h3');
-let hasAnimated = false;
-
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting && !hasAnimated) {
-            hasAnimated = true;
-            stats.forEach(stat => {
-                const target = stat.textContent;
-                const isNumber = !isNaN(parseInt(target));
-
-                if (isNumber) {
-                    const targetNumber = parseInt(target);
-                    animateCounter(stat, 0, targetNumber, 2000);
-                }
-            });
-        }
-    });
-}, { threshold: 0.5 });
-
-const statsSection = document.querySelector('.stats');
-if (statsSection) {
-    statsObserver.observe(statsSection);
-}
-
-function animateCounter(element, start, end, duration) {
-    const range = end - start;
-    const increment = range / (duration / 16);
-    let current = start;
-
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= end) {
-            element.textContent = end + '+';
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(current) + '+';
-        }
-    }, 16);
-}
-
-// ========================================
 // Form Input Animations
 // ========================================
 
@@ -432,19 +387,6 @@ logoText.forEach(logo => {
 });
 
 // ========================================
-// Testimonials Animation
-// ========================================
-
-// const testimonialCards = document.querySelectorAll('.testimonial-card');
-
-// testimonialCards.forEach((card, index) => {
-//     card.style.opacity = '0';
-//     card.style.transform = 'translateY(30px)';
-//     card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-//     observer.observe(card);
-// });
-
-// ========================================
 // Automatic Copyright Year Update
 // ========================================
 
@@ -476,6 +418,8 @@ const chatbotSend = document.getElementById('chatbotSend');
 
 // Toggle chatbot
 chatbotButton.addEventListener('click', () => {
+    whatsappfloat.classList.toggle('active');
+    tiktokfloat.classList.toggle('active');
     chatbotButton.classList.toggle('active');
     chatbotContainer.classList.toggle('active');
     if (chatbotContainer.classList.contains('active')) {
@@ -485,9 +429,11 @@ chatbotButton.addEventListener('click', () => {
 
 // Close chatbot when clicking outside
 document.addEventListener('click', (e) => {
-    if (!chatbotContainer.contains(e.target) && !chatbotButton.contains(e.target)) {
+    if (!chatbotContainer.contains(e.target) && !chatbotButton.contains(e.target) && !whatsappfloat.contains(e.target) && !tiktokfloat.contains(e.target)) {
         chatbotButton.classList.remove('active');
         chatbotContainer.classList.remove('active');
+        whatsappfloat.classList.remove('active');
+        tiktokfloat.classList.remove('active');
     }
 });
 
@@ -844,3 +790,51 @@ document.querySelectorAll('.resize').forEach(image =>{
 document.querySelector('.popup-image span').onclick = () => {
     document.querySelector('.popup-image').style.display = 'none';
 };
+
+//quick access button
+
+// const quickAccessFloat = document.getElementById('accessFloat');
+//     // Close when clicking outside the float button
+// const quickAccessClose = document.querySelector('body'); 
+// const whatsappfloat = document.getElementById('whatsappFloat');
+// const tiktokfloat = document.getElementById('tiktokFloat');
+// const chatsbotfloat = document.getElementById('chatbotButton');
+// const chatsbotfloatComments = document.querySelector('.fa-comments');
+// const chatsbotfloatTimes = document.querySelector('.fa-times');
+
+// quickAccessFloat.addEventListener('click', () => {
+//     quickAccessFloat.classList.toggle('active');
+//     whatsappfloat.style.display = 'block';
+//     tiktokfloat.style.display = 'block';
+//     chatsbotfloat.style.display = 'none'; 
+//     chatsbotfloatComments.style.display = 'none';
+//     chatsbotfloatTimes.style.display = 'none';  
+// });
+
+//  quickAccessClose.addEventListener('click', (e) => {
+//      if (!quickAccessFloat.contains(e.target) && !whatsappfloat.contains(e.target) && !tiktokfloat.contains(e.target) && !chatsbotfloat.contains(e.target)) {
+//         quickAccessFloat.classList.remove('active');
+//         whatsappfloat.style.display = 'none';
+//         tiktokfloat.style.display = 'none';
+//         chatsbotfloat.style.display = 'block';
+//         chatsbotfloatComments.style.display = 'block';
+//      }
+// });
+const quickAccessFloat = document.getElementById('accessFloat');
+const socialIcons = document.getElementById("socialIcons");
+const whatsappfloat = document.getElementById('whatsappFloat');
+const tiktokfloat = document.getElementById('tiktokFloat');
+
+quickAccessFloat.addEventListener("click", () => {
+    socialIcons.classList.toggle("active");
+});
+
+//     // Close when clicking outside the float button
+ const quickAccessClose = document.querySelector('body');
+
+   quickAccessClose.addEventListener('click', (e) => {
+      if (!quickAccessFloat.contains(e.target) && !socialIcons.contains(e.target)) {
+         quickAccessFloat.classList.remove('active');
+         socialIcons.classList.remove("active");
+      }
+ });

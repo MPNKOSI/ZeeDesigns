@@ -945,12 +945,111 @@ section {
 }
 
 /* ========================================
+   Quick Access Float Button
+   ======================================== */
+
+
+.social-icons {
+    z-index: 996;
+    position: fixed;
+    bottom: 104px;
+    right: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.social-icons.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.social-icons.active .icon:nth-child(1) { transition-delay: 0.1s; }
+.social-icons.active .icon:nth-child(2) { transition-delay: 0.2s; }
+.social-icons.active .icon:nth-child(3) { transition-delay: 0.3s; }
+
+.access {
+   position: fixed;
+    bottom:30px;
+    right: 30px;
+    width: 60px;
+    height: 60px; 
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 9999;
+    transition: var(--transition);
+    outline: none;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.access.active {
+    display: none;
+}
+
+.access img {
+    width: 40px;
+    color: #fff;
+}
+
+.access:hover {
+    transform: scale(1.1);
+    background-color: #daaeda;
+    border: 1px solid rgb(236, 43, 43);
+}
+
+/* ========================================
+   Tiktok Float Button
+   ======================================== */
+
+.tiktok-float {
+   
+    bottom: 240px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+    transition: var(--transition);
+    outline: none;
+    text-decoration: none !important; 
+}
+
+.tiktok-float:focus {
+    outline: none;
+    text-decoration: none !important;
+}
+
+.tiktok-float:hover {
+    transform: scale(1.1);
+    background-color: #141010;
+    text-decoration: none !important;
+}
+
+.tiktok-float i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* ========================================
    WhatsApp Float Button
    ======================================== */
 
 .whatsapp-float {
-    position: fixed;
-    bottom: 30px;
+   
+    bottom: 170px;
     right: 30px;
     width: 60px;
     height: 60px;
@@ -980,10 +1079,6 @@ section {
 .whatsapp-float i {
     font-size: 2rem;
     color: white;
-}
-
-#whatsappFloat.active {
-    display: none;
 }
 
 /* ========================================
@@ -1025,8 +1120,7 @@ section {
    ======================================== */
 
 .chatbot-button {
-    position: fixed;
-    bottom: 110px;
+    bottom: 100px;
     right: 30px;
     width: 60px;
     height: 60px;
@@ -1039,9 +1133,10 @@ section {
     box-shadow: var(--shadow-lg);
     z-index: 998;
     transition: all 0.3s ease;
-    /*animation: pulse 2s infinite;*/
     border: none;
 }
+
+
 
 .chatbot-button:hover {
     transform: scale(1.1);
@@ -1656,11 +1751,16 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 
+    .tiktok-float,
     .whatsapp-float {
         bottom: 20px;
         right: 20px;
         width: 50px;
         height: 50px;
+    }
+
+    .tiktok-float img {
+        width: 30px;
     }
 
     .whatsapp-float i {
@@ -1736,7 +1836,9 @@ input, textarea {
     .chatbot-button i {
         font-size: 1.5rem;
     }
-    
+    .tiktok-float {
+        bottom: 90px; 
+    }
     .whatsapp-float {
         bottom: 90px; 
     }
